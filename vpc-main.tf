@@ -10,6 +10,7 @@ resource "aws_vpc" "main" {
   }
 }
 
+
  ################# Subnets #############
 resource "aws_subnet" "subnet1" {
   vpc_id     = "${aws_vpc.main.id}"
